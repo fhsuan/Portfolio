@@ -1,0 +1,87 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+
+$en-and-no: 'Bebas Neue', cursive;
+$normal-font:'Noto Sans TC', sans-serif;
+$main-color: #a61d55;
+$second-color: #333;
+$point-color: #fff;
+$bg-color: #1d1627;
+$main-word: 5rem;
+$second-word: 3rem;
+$third-word: 2rem;
+$fourth-word: 1.125rem;
+$fifth-word: 0.813rem;
+$normal-word: 1rem;
+
+$n: 10;
+$s: 500;
+
+$pc-m-media: 1680px;
+$pc-s-media: 1280px;
+$pad-media: 1100px;
+$phone-media: 600px;
+
+@mixin pad-width() {
+  @media screen and (max-width: $pad-media) {
+    @content;
+  }
+}
+@mixin phone-width() {
+  @media screen and (max-width: $phone-media) {
+    @content;
+  }
+}
+
+body, html{ height: 100%; background: $bg-color;}
+
+.back{ 
+  font: 1.25rem; text-align: left; margin-left: 3%; width: 70px; height: 70px; text-align: center; line-height: 70px; position: fixed; z-index: 9; border-radius: 50%; top: 30px; color: $point-color;
+  @media screen and (max-width: 900px) {
+    position: relative; margin: 0 5% 10px;
+  }
+  a{ display: block; width: 100%; height: 100%; color: $point-color; transition: .5s; border: 1px solid $point-color; border-radius: 50%;}
+  &:hover{ color: #fff; background: #f7e04f; transition: .5s; border-radius: 50%; border: 1px solid #f7e04f;}
+}
+
+
+.pg_works_int{ width: 35%; height: 100%; display: table; position: fixed; padding: 0 1% 3% 3%; 
+background: url(../img/pg-bg-line2.jpg) -300px 100px no-repeat; background-size: cover;
+  @media screen and (max-width: 930px) { padding-top: 60px;}
+  @media screen and (max-width: 900px) {width: 95%; height: auto; display: inline-block; position: relative; padding: 60px 0 20px 5%;
+    background: url(../img/pg-bg-line2.jpg) -150px -100px no-repeat; background-size: cover;}
+  ul{ display: table-cell; vertical-align: middle;
+    li{ display: inline-block;
+      h2{ font-size: 2rem; font-weight: 500; line-height: 2.75rem; margin-bottom: 10px; color: $point-color;
+        @include pad-width { font-size: 1.75rem; line-height: 2rem;}
+      }
+      span{ font-size: 0.938rem; color: #a1a1a1; font-weight: 300;}
+      p{ margin: 20px 0; line-height: 1.875rem; color: $point-color;}
+    }
+  }
+}
+
+.web{ width: 200px; font: 1.25rem $en-and-no; background: $main-color; color: $point-color; text-align: center; border-radius: 5px; margin: 40px 0;
+  a{ color: $point-color; transition: .5s; display: block; width: 100%; height: 100%; padding: 10px 0; border-radius: 5px;
+    &:hover{ background: #c72266; transition: .5s;}
+  }
+}
+
+.pg_works_pic{ width: 65%; display: inline-block; float: right; text-align: right; padding: 3% 2% 0;
+  @media screen and (max-width: 900px) { width: 90%; float: left; text-align: center; padding: 0; margin: 0 5%;}
+  img{ width: 100%; box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.8); margin-bottom: 40px;
+  }
+}
+
+/* animation */
+.fadeIn{
+	animation: fadeIn 1.8s ease-in-out;
+  visibility: visible !important;	
+}
+
+@keyframes fadeIn {
+	0% { opacity: 0;}
+  60% { opacity: 0;}
+	100% { opacity: 1;}		
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio｜林芳萱作品集</title>
+    <meta property="og:title" content="Portfolio｜林芳萱作品集">
+    <meta property="og:image" content="img/fb.jpg" />
+    <link rel="image_src" href="img/fb.jpg" />
+    <meta content="telephone=no" name="format-detection">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- animsition -->
+    <script src="js/animsition.min.js"></script>
+    <link rel="stylesheet" href="css/animsition.min.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/works.css?v=2022">
+</head>
+
+<body class="animsition">
+    <div class="pg_works_int fadeIn">
+        <ul>
+            <li>
+                <h2>極光Aurora</h2>
+                <span>2018 ｜ Web設計、製作</span>
+                <p>極光網頁是每年必做的主題之一，世界各地可以看到極光的地區很多，且各有各的特色，突顯選擇的多樣與引起消費者興趣是網頁的重點。<br><br>大圖選用各地區極光美圖，並壓上帶有溫度的金句，表現極光給人的浪漫與夢幻感，隨機進入不同地區主頁讓消費者每次進來都有新的驚艷感，也能公平曝光所有地區。
+                </p>
+                <div class="web"><a href="http://evftuatb2c.everfuntravel.com:8001/promo/tina_test/Aurora/"
+                        target="_blank">Visit&ensp;Website</a></div>
+            </li>
+        </ul>
+    </div>
+    <div class="pg_works_pic">
+        <img src="img/works7/1.jpg" alt="">
+        <img src="img/works7/2.jpg" alt="">
+        <img src="img/works7/3.jpg" alt="">
+        <img src="img/works7/4.jpg" alt="">
+        <img src="img/works7/5.jpg" alt="">
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".animsition").animsition({
+                inClass: 'fade-in-left-sm',
+                outClass: 'fade-out-left-sm',
+                inDuration: 1000,
+                outDuration: 800,
+                linkElement: '.animsition-link',
+                loading: true,
+                loadingParentElement: 'body',
+                loadingClass: 'animsition-loading',
+                loadingInner: '',
+                timeout: false,
+                timeoutCountdown: 5000,
+                onLoadEvent: true,
+                browser: ['animation-duration', '-webkit-animation-duration'],
+                overlay: false,
+                overlayClass: 'animsition-overlay-slide',
+                overlayParentElement: 'body',
+                transition: function (url) { window.location.href = url; }
+            });
+        });
+    </script>
+</body>
+
+</html>
