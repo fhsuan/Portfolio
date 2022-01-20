@@ -9,7 +9,6 @@
   <meta property="og:image" content="img/fb.jpg" />
   <meta property="og:title" content="Portfolio｜林芳萱作品集">
   <meta content="telephone=no" name="format-detection">
-  <meta http-equiv="refresh" content="0;url=https://fhsuan.github.io/Portfolio">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link rel="image_src" href="img/fb.jpg" />
   <link rel="stylesheet" href="css/scroll.css">
@@ -20,8 +19,16 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="fadeIn2">
-  <!-- <div id="loading"><img src="img/load.png" alt=""></div> -->
+<body class="fadeIn2" onLoad="body_onload()">
+  <script>
+    function body_onload() {
+      if (0 == getcookie('param_cookie')) {
+        setcookie("param_cookie", 1, 10);
+        window.location.reload(true);
+      }
+    }
+  </script>
+  <div id="loading"><img src="img/load.png" alt=""></div>
 
   <section data-scroll-container>
     <!-- kv -->
@@ -271,13 +278,13 @@
     })();
   </script>
 
-  <!-- load 
+  load
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script>
     $(window).load(function () {
       $('#loading').fadeOut(1000);
     });
-  </script>-->
+  </script>
 
   <!-- copy -->
   <script>
