@@ -21,7 +21,12 @@
 
 <body class="fadeIn2">
   <script>
-    window.onload = function () { window.location.reload() }
+    window.onload = function () {
+      if (!localStorage.justOnce) {
+        localStorage.setItem("justOnce", "true");
+        window.location.reload();
+      }
+    }
   </script>
   <!-- <div id="loading"><img src="img/load.png" alt=""></div> -->
 
