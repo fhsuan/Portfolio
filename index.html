@@ -20,13 +20,21 @@
 </head>
 
 <body class="fadeIn2">
-  <script>
+  <!-- <script>
     window.onload = function () {
       if (!localStorage.justOnce) {
         localStorage.setItem("justOnce", "true");
         window.location.reload();
       }
     }
+  </script> -->
+  <script>
+    $(document).ready(function () {
+      if (location.href.indexOf("#reloaded") == -1) {
+        location.href = location.href + "#reloaded";
+        location.reload();
+      }
+    })
   </script>
   <div id="loading"><img src="img/load.png" alt=""></div>
 
