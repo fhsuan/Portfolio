@@ -17,6 +17,14 @@
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/owl.theme.default.css">
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    $(document).ready(function () {
+      if (location.href.indexOf("#reloaded") == -1) {
+        location.href = location.href + "#reloaded";
+        location.reload();
+      }
+    })
+  </script>
 </head>
 
 <body id="reloaded" class="fadeIn2">
@@ -28,14 +36,7 @@
       }
     }
   </script> -->
-  <script>
-    $(document).ready(function () {
-      if (location.href.indexOf("#reloaded") == -1) {
-        location.href = location.href + "#reloaded";
-        location.reload();
-      }
-    })
-  </script>
+
   <div id="loading"><img src="img/load.png" alt=""></div>
 
   <section data-scroll-container>
