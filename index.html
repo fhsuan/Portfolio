@@ -277,27 +277,6 @@
     <div id="top-btn" class="back-top"><a href="#top" data-scroll-to>top</a></div>
   </section>
 
-  <!-- owl -->
-  <script src="js/owl.carousel.js"></script>
-  <script>
-    $(document).ready(function () {
-      var owl = $('.owl-carousel');
-      owl.owlCarousel({
-        loop: true,
-        margin: 10,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-        responsive: {
-          0: { items: 1 },
-          768: { items: 2 },
-          1023: { items: 3 },
-          1280: { items: 4 }
-        }
-      })
-    })
-  </script>
-
   <!-- load -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
   <script>
@@ -357,6 +336,27 @@
         return;
       }
     });
+  </script>
+
+  <!-- owl -->
+  <script src="js/owl.carousel.js"></script>
+  <script>
+    $(document).ready(function () {
+      var owl = $('.owl-carousel');
+      owl.owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: { items: 1 },
+          768: { items: 2 },
+          1023: { items: 3 },
+          1280: { items: 4 }
+        }
+      })
+    })
   </script>
 
 </body>
