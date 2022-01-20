@@ -275,6 +275,11 @@
   <script>
     (function () {
       var scroll = new LocomotiveScroll();
+
+      scroll.on('call', function () {
+        console.log('after call')
+        // code 放這看看
+      });
     })();
   </script>
 
@@ -351,6 +356,12 @@
       }
     }
   </script>
+
+  <!-- <script>
+    setTimeout(function () {
+      window.location.reload();
+    }, 3000);
+  </script> -->
 
 </body>
 
