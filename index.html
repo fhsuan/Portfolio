@@ -19,14 +19,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="fadeIn2" onLoad="body_onload()">
+<body class="fadeIn2">
   <script>
-    function body_onload() {
-      if (0 == getcookie('param_cookie')) {
-        setcookie("param_cookie", 1, 10);
-        window.location.reload(true);
-      }
-    }
+    window.onload = function () { window.location.reload() }
   </script>
   <!-- <div id="loading"><img src="img/load.png" alt=""></div> -->
 
@@ -273,9 +268,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/scroll.js"></script>
   <script>
-    (function () {
-      var scroll = new LocomotiveScroll();
-    })();
+      (function () {
+        var scroll = new LocomotiveScroll();
+      })();
   </script>
 
   <!-- load -->
