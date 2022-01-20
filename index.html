@@ -275,11 +275,6 @@
   <script>
     (function () {
       var scroll = new LocomotiveScroll();
-
-      scroll.on('call', function () {
-        console.log('after call')
-        // code 放這看看
-      });
     })();
   </script>
 
@@ -349,19 +344,13 @@
   </script>
 
   <script>
-    window.onload = function () {
-      if (!localStorage.justOnce) {
-        localStorage.setItem("justOnce", "true");
-        window.location.reload();
-      }
-    }
-  </script>
-
-  <!-- <script>
     setTimeout(function () {
-      window.location.reload();
+      if (window.location.hash != '#r') {
+        window.location.hash = 'r';
+        window.location.reload(1);
+      }
     }, 3000);
-  </script> -->
+  </script>
 
 </body>
 
