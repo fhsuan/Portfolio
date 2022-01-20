@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio｜作品集by Tina Lin</title>
+    <meta property="og:title" content="Portfolio｜作品集by Tina Lin">
+    <meta property="og:image" content="img/fb.jpg" />
+    <link rel="image_src" href="img/fb.jpg" />
+    <meta content="telephone=no" name="format-detection">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- animsition -->
+    <script src="js/animsition.min.js"></script>
+    <link rel="stylesheet" href="css/animsition.min.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/works.css?v=2022">
+</head>
+
+<body class="animsition">
+    <div class="pg_works_int fadeIn">
+        <ul>
+            <li>
+                <h2>越南，越愛你</h2>
+                <span>2018 ｜ Web設計、製作</span>
+                <p>越南因為它特有的美食與異國情調，成為近年越來越熱門的旅遊勝地。網頁以「愛上越南」為主軸，從景色、文化、食物等角度讚嘆越南的美好。<br><br>以特殊視角的大圖做為主視覺，搶眼又獨特；色系使用亮色與純色搭配，點綴適當的插圖，營造越式風情，也強調輕鬆的旅遊感。
+                </p>
+                <div class="web"><a href="https://www.everfuntravel.com/promo/special/area/asia/vietnam/"
+                        target="_blank">Visit&ensp;Website</a></div>
+            </li>
+        </ul>
+    </div>
+    <div class="pg_works_pic">
+        <img src="img/works8/1.jpg" alt="">
+        <img src="img/works8/2.jpg" alt="">
+        <img src="img/works8/3.jpg" alt="">
+        <img src="img/works8/4.jpg" alt="">
+        <img src="img/works8/5.jpg" alt="">
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".animsition").animsition({
+                inClass: 'fade-in-left-sm',
+                outClass: 'fade-out-left-sm',
+                inDuration: 1000,
+                outDuration: 800,
+                linkElement: '.animsition-link',
+                loading: true,
+                loadingParentElement: 'body',
+                loadingClass: 'animsition-loading',
+                loadingInner: '',
+                timeout: false,
+                timeoutCountdown: 5000,
+                onLoadEvent: true,
+                browser: ['animation-duration', '-webkit-animation-duration'],
+                overlay: false,
+                overlayClass: 'animsition-overlay-slide',
+                overlayParentElement: 'body',
+                transition: function (url) { window.location.href = url; }
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $(".back a").click(function (
+                window.history.back(); location.reload();
+            ))
+            })
+    </script>
+</body>
+
+</html>

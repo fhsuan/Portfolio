@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio｜林芳萱作品集</title>
+    <meta property="og:title" content="Portfolio｜林芳萱作品集">
+    <meta property="og:image" content="img/fb.jpg" />
+    <link rel="image_src" href="img/fb.jpg" />
+    <meta content="telephone=no" name="format-detection">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- animsition -->
+    <script src="js/animsition.min.js"></script>
+    <link rel="stylesheet" href="css/animsition.min.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/works.css?v=2022">
+</head>
+
+<body class="animsition">
+
+    <div class="pg_works_int fadeIn">
+        <ul>
+            <li>
+                <h2>汎遊中國</h2>
+                <span>2019 ｜ Web設計、製作</span>
+                <p>「汎遊中國」為全新中國線品牌，先由平面設計出標準字，可通用在後續系列團。<br><br>第一波主題網頁「發現你的中國」視覺採用許多中國風元素，包括色系、形狀、圖紋...等。各式插圖小人遊走在網頁中，就像在中國各地旅遊一樣，引導視覺動線也增加畫面趣味性。
+                </p>
+                <div class="web"><a href="https://www.everfuntravel.com/promo/special/fun-china/"
+                        target="_blank">Visit&ensp;Website</a></div>
+            </li>
+        </ul>
+    </div>
+    <div class="pg_works_pic">
+        <img src="img/works4/1.jpg" alt="">
+        <img src="img/works4/2.jpg" alt="">
+        <img src="img/works4/3.jpg" alt="">
+        <img src="img/works4/4.jpg" alt="">
+        <img src="img/works4/5.jpg" alt="">
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".animsition").animsition({
+                inClass: 'fade-in-left-sm',
+                outClass: 'fade-out-left-sm',
+                inDuration: 1000,
+                outDuration: 800,
+                linkElement: '.animsition-link',
+                loading: true,
+                loadingParentElement: 'body',
+                loadingClass: 'animsition-loading',
+                loadingInner: '',
+                timeout: false,
+                timeoutCountdown: 5000,
+                onLoadEvent: true,
+                browser: ['animation-duration', '-webkit-animation-duration'],
+                overlay: false,
+                overlayClass: 'animsition-overlay-slide',
+                overlayParentElement: 'body',
+                transition: function (url) { window.location.href = url; }
+            });
+        });
+    </script>
+</body>
+
+</html>

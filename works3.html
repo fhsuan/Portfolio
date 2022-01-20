@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio｜林芳萱作品集</title>
+    <meta property="og:title" content="Portfolio｜林芳萱作品集">
+    <meta property="og:image" content="img/fb.jpg" />
+    <link rel="image_src" href="img/fb.jpg" />
+    <meta content="telephone=no" name="format-detection">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- animsition -->
+    <script src="js/animsition.min.js"></script>
+    <link rel="stylesheet" href="css/animsition.min.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/works.css?v=2022">
+</head>
+
+<body class="animsition">
+
+    <div class="pg_works_int fadeIn">
+        <ul>
+            <li>
+                <h2>一球入魂，前進棒球殿堂</h2>
+                <span>2020 ｜ Web設計、製作</span>
+                <p>此專案由平面先完成主標設計，後續再由我延伸設計網頁，「一球入魂」代表著全心全意投入某事，帶有積極與熱血的含義。<br><br>整體視覺使用漫畫風格，各種效果線與相關插圖營造出運動賽事帶給人們的興奮情緒，鮮豔對比配色，配上適當過場動畫，希望引起客人想去現場朝聖球賽的好奇心與興趣。
+                </p>
+                <div class="web"><a href="https://www.everfuntravel.com/promo/special/japan-baseball/"
+                        target="_blank">Visit&ensp;Website</a></div>
+            </li>
+        </ul>
+    </div>
+    <div class="pg_works_pic">
+        <img src="img/works3/1.jpg" alt="">
+        <img src="img/works3/2.jpg" alt="">
+        <img src="img/works3/3.jpg" alt="">
+        <img src="img/works3/4.jpg" alt="">
+        <img src="img/works3/5.jpg" alt="">
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".animsition").animsition({
+                inClass: 'fade-in-left-sm',
+                outClass: 'fade-out-left-sm',
+                inDuration: 1000,
+                outDuration: 800,
+                linkElement: '.animsition-link',
+                loading: true,
+                loadingParentElement: 'body',
+                loadingClass: 'animsition-loading',
+                loadingInner: '',
+                timeout: false,
+                timeoutCountdown: 5000,
+                onLoadEvent: true,
+                browser: ['animation-duration', '-webkit-animation-duration'],
+                overlay: false,
+                overlayClass: 'animsition-overlay-slide',
+                overlayParentElement: 'body',
+                transition: function (url) { window.location.href = url; }
+            });
+        });
+    </script>
+</body>
+
+</html>

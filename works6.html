@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio｜林芳萱作品集</title>
+    <meta property="og:title" content="Portfolio｜林芳萱作品集">
+    <meta property="og:image" content="img/fb.jpg" />
+    <link rel="image_src" href="img/fb.jpg" />
+    <meta content="telephone=no" name="format-detection">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- animsition -->
+    <script src="js/animsition.min.js"></script>
+    <link rel="stylesheet" href="css/animsition.min.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/works.css?v=2022">
+</head>
+
+<body class="animsition">
+    <div class="pg_works_int fadeIn">
+        <ul>
+            <li>
+                <h2>駕馭你的新旅程</h2>
+                <span>2018 ｜ Web設計、製作</span>
+                <p>網頁主題以「自遊」為概念，將旅行的自主權返還旅客，以「駕馭」連結自駕旅遊，同時增強自遊／自由的氛圍。內容各段落眉標，可串連為呼應網頁主標的自駕旅遊主張。<br><br>
+                    網頁形式為一頁式，以局部深色搭配細緻元素呈現，符合產品方希望的深色沈穩，以及公司的設計質感。</p>
+                <div class="web"><a href="http://evftuatb2c.everfuntravel.com:8001/promo/tina_test/MGallery/"
+                        target="_blank">Visit&ensp;Website</a></div>
+            </li>
+        </ul>
+    </div>
+    <div class="pg_works_pic">
+        <img src="img/works6/1.jpg" alt="">
+        <img src="img/works6/2.jpg" alt="">
+        <img src="img/works6/3.jpg" alt="">
+        <img src="img/works6/4.jpg" alt="">
+        <img src="img/works6/5.jpg" alt="">
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".animsition").animsition({
+                inClass: 'fade-in-left-sm',
+                outClass: 'fade-out-left-sm',
+                inDuration: 1000,
+                outDuration: 800,
+                linkElement: '.animsition-link',
+                loading: true,
+                loadingParentElement: 'body',
+                loadingClass: 'animsition-loading',
+                loadingInner: '',
+                timeout: false,
+                timeoutCountdown: 5000,
+                onLoadEvent: true,
+                browser: ['animation-duration', '-webkit-animation-duration'],
+                overlay: false,
+                overlayClass: 'animsition-overlay-slide',
+                overlayParentElement: 'body',
+                transition: function (url) { window.location.href = url; }
+            });
+        });
+    </script>
+</body>
+
+</html>

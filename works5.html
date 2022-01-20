@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio｜林芳萱作品集</title>
+    <meta property="og:title" content="Portfolio｜林芳萱作品集">
+    <meta property="og:image" content="img/fb.jpg" />
+    <link rel="image_src" href="img/fb.jpg" />
+    <meta content="telephone=no" name="format-detection">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- animsition -->
+    <script src="js/animsition.min.js"></script>
+    <link rel="stylesheet" href="css/animsition.min.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/works.css?v=2022">
+</head>
+
+<body class="animsition">
+
+    <div class="pg_works_int fadeIn">
+        <ul>
+            <li>
+                <h2>郵輪旅遊</h2>
+                <span>2019 ｜ 網頁設計、製作</span>
+                <p>走上遊輪，彷彿來到一個有別於日常生活的世界，就像打開了另一扇新窗，船上不僅有美食、海景，還有豐富的表演活動與服務設施，提供多樣體驗，旅人在此遠離生活瑣事，更能好好聚焦在歡樂的時光上，享受繽紛的假期。
+                </p>
+                <div class="web"><a href="http://evftuatb2c.everfuntravel.com:8001/promo/tina_test/cruises/"
+                        target="_blank">Visit&ensp;Website</a></div>
+            </li>
+        </ul>
+    </div>
+    <div class="pg_works_pic">
+        <img src="img/works5/1.jpg" alt="">
+        <img src="img/works5/2.jpg" alt="">
+        <img src="img/works5/3.jpg" alt="">
+        <img src="img/works5/4.jpg" alt="">
+        <img src="img/works5/5.jpg" alt="">
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".animsition").animsition({
+                inClass: 'fade-in-left-sm',
+                outClass: 'fade-out-left-sm',
+                inDuration: 1000,
+                outDuration: 800,
+                linkElement: '.animsition-link',
+                loading: true,
+                loadingParentElement: 'body',
+                loadingClass: 'animsition-loading',
+                loadingInner: '',
+                timeout: false,
+                timeoutCountdown: 5000,
+                onLoadEvent: true,
+                browser: ['animation-duration', '-webkit-animation-duration'],
+                overlay: false,
+                overlayClass: 'animsition-overlay-slide',
+                overlayParentElement: 'body',
+                transition: function (url) { window.location.href = url; }
+            });
+        });
+    </script>
+</body>
+
+</html>

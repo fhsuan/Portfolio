@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio｜林芳萱作品集</title>
+    <meta property="og:title" content="Portfolio｜林芳萱作品集">
+    <meta property="og:image" content="img/fb.jpg" />
+    <link rel="image_src" href="img/fb.jpg" />
+    <meta content="telephone=no" name="format-detection">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- animsition -->
+    <script src="js/animsition.min.js"></script>
+    <link rel="stylesheet" href="css/animsition.min.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/works.css?v=2022">
+</head>
+
+<body class="animsition">
+    <div class="pg_works_int fadeIn">
+        <ul>
+            <li>
+                <h2>瑞士到了</h2>
+                <span>2017 ｜ 網頁設計、製作</span>
+                <p>配合主標「瑞士到了」，將深度慢遊、自然人文、道地風味、動物觀察及巴黎購物包裝成一站一站的概念，呈現旅途的多元。<br>融入「旅遊達人」與「人氣部落客」的推薦介紹，摘選他們的文字，讓消費者增加信任感、認同品質，並可搜尋他們的文章了解行程，讓消費者感受行程的品質、豐富。
+                </p>
+                <div class="web"><a href="http://evftuatb2c.everfuntravel.com:8001/promo/tina_test/switzerland/"
+                        target="_blank">Visit&ensp;Website</a></div>
+            </li>
+        </ul>
+    </div>
+    <div class="pg_works_pic">
+        <img src="img/works9/1.jpg" alt="">
+        <img src="img/works9/2.jpg" alt="">
+        <img src="img/works9/3.jpg" alt="">
+        <img src="img/works9/4.jpg" alt="">
+        <img src="img/works9/5.jpg" alt="">
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".animsition").animsition({
+                inClass: 'fade-in-left-sm',
+                outClass: 'fade-out-left-sm',
+                inDuration: 1000,
+                outDuration: 800,
+                linkElement: '.animsition-link',
+                loading: true,
+                loadingParentElement: 'body',
+                loadingClass: 'animsition-loading',
+                loadingInner: '',
+                timeout: false,
+                timeoutCountdown: 5000,
+                onLoadEvent: true,
+                browser: ['animation-duration', '-webkit-animation-duration'],
+                overlay: false,
+                overlayClass: 'animsition-overlay-slide',
+                overlayParentElement: 'body',
+                transition: function (url) { window.location.href = url; }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
