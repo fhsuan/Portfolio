@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body id="reloaded" class="fadeIn2">
+<body class="fadeIn2">
   <!-- <div id="loading"><img src="img/load.png" alt=""></div> -->
 
   <section data-scroll-container>
@@ -344,12 +344,12 @@
   </script>
 
   <script>
-    $(document).ready(function () {
-      if (location.href.indexOf("#reloaded") == -1) {
-        location.href = location.href + "#reloaded";
-        location.reload();
+    window.onload = function () {
+      if (!localStorage.justOnce) {
+        localStorage.setItem("justOnce", "true");
+        window.location.reload();
       }
-    })
+    }
   </script>
 
 </body>
