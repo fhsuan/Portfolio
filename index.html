@@ -17,14 +17,6 @@
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/owl.theme.default.css">
   <link rel="stylesheet" href="css/style.css">
-  <script>
-    window.onload = function () {
-      if (!localStorage.justOnce) {
-        localStorage.setItem("justOnce", "true");
-        window.location.reload();
-      }
-    }
-  </script>
 </head>
 
 <body class="fadeIn2">
@@ -270,7 +262,7 @@
   </section>
 
   <!-- load -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     $(window).load(function () {
       $('#loading').fadeOut(1000);
@@ -278,7 +270,6 @@
   </script>
 
   <!-- scroll -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/scroll.js"></script>
   <script>
     (function () {
@@ -348,6 +339,15 @@
           1280: { items: 4 }
         }
       })
+    })
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      if (location.href.indexOf("#reloaded") == -1) {
+        location.href = location.href + "#reloaded";
+        location.reload();
+      }
     })
   </script>
 
