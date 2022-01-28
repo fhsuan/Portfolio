@@ -1,0 +1,382 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+
+$en-and-no: 'Bebas Neue', cursive;
+$normal-font:'Noto Sans TC', sans-serif;
+$main-color: #a61d55;
+$second-color: #333;
+$point-color: #fff;
+$bg-color: #1d1627;
+$main-word: 5rem;
+$second-word: 3rem;
+$third-word: 2rem;
+$fourth-word: 1.125rem;
+$fifth-word: 0.813rem;
+$normal-word: 1rem;
+
+$n: 10;
+$s: 500;
+
+$pc-m-media: 1680px;
+$pc-s-media: 1280px;
+$pad-media: 1100px;
+$phone-media: 600px;
+
+@mixin pad-width() {
+  @media screen and (max-width: $pad-media) {
+    @content;
+  }
+}
+@mixin phone-width() {
+  @media screen and (max-width: $phone-media) {
+    @content;
+  }
+}
+
+body, html{ font-family: $normal-font; height: 100%; font-size: $normal-word; background: $bg-color; overflow-x: hidden;}
+h1{ display: none;}
+p{ font-size: $normal-word; font-weight: 500; line-height: 2.25;}
+a:link, a:visited ,a:hover ,a:active { color: $point-color;}
+.img100{ width: 100%; vertical-align: bottom;}
+.kv-wrap { width: 100%; height: 100vh; overflow: hidden; background: $bg-color;
+  @include phone-width { height: 500px;}
+.kv-td{ width: 2560px; height: 100%; position: relative; left: 50%; margin-left: -1280px;
+  span{ position: absolute;
+    img{ width: 100%;}
+  }
+ }
+}
+
+$shadow: ();
+@for $i from 1 through $s {
+  $x: random(1920);
+  $y: random(1000);
+  $shadow: $shadow, ( $x+px $y+px #7f92bb) !global;
+}
+.star {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: $shadow;
+  animation: star 8s infinite;
+}
+@keyframes star {
+  0% { opacity: 0.1;}
+  30% { opacity: 0.1;}
+	50% { opacity: 1;}
+  80% { opacity: 1;}
+	100% { opacity: 0.1;}	
+}
+
+@for $i from 1 through $n {
+  $v: random(90) + 9; // left
+  $h: random(250) + 50; // top
+  $d: random(70)/10 + 3; // 秒數
+  .meteor-#{$i} {
+    top: $h + px;
+    left: $v*1%;
+    width: 300px;
+    height: 2px;
+    transform: rotate(-45deg);
+    background-image: linear-gradient(to right, $point-color, rgba(255,255,255,0));
+    animation: meteor $d+s linear infinite;   
+  }
+}
+@keyframes meteor {
+  0% { opacity: 1; margin-top: -300px; margin-right: -300px;}
+  12% { opacity: 0;}
+  15% { margin-top: 300px; margin-left: -600px; opacity: 0;}
+  100% { opacity: 0;}
+}
+
+.kv-bg-piece{ width: 100%; height: 1000px; background: url(../img/kv-bg-piece.png) no-repeat; background-size: cover; animation: piece 10s infinite;
+  @include phone-width { height: 100%; background: url(../img/kv-bg-piece.png) center -150px no-repeat;}
+}
+@keyframes piece {
+  0% { opacity: 0.3;}
+	25% { opacity: 0.7;}
+	50% { opacity: 1;}
+	75% { opacity: 0.7;}
+	100% { opacity: 0.3;}
+}
+
+.kv-bg-star1{ width: 50%; top: 10vh; left: 30px;
+  img{ opacity: 0.7;}
+}
+.kv-bg-star2{ width: 50%; top: 15vh; right: 30px;
+  img{ opacity: 0.7;}
+}
+
+.kv-tit-wrap{ width: 75%; height: 100%; position: relative; z-index: 9; overflow: hidden; margin: auto;
+  @media screen and (max-width: 2000px) { width: 60%;}
+  @media screen and (max-width: $pc-m-media) { width: 1200px;}
+  @media screen and (max-width: $pc-s-media) { width: 1000px;}
+  @include pad-width { width: 400px;}
+  @include phone-width { width: 280px;}
+}
+.kv-tit{ height: 100%; display: flex; justify-content: center; align-items: center; align-content: center; flex-wrap: wrap; color: $point-color; text-align: center; opacity: 0.95;
+  @include phone-width{ margin-top: -20px;}
+}
+  h2{ font-size: $main-word; width: 100%; display: inline; margin: 20px 0 20px 10px; letter-spacing: 0.2em; font-family: $en-and-no;
+    @include phone-width{ font-size: $second-word;}
+  }
+  h3{ font-size: $second-word; width: 100%; display: inline; letter-spacing: 0.1em; font-family: $en-and-no;
+    @include phone-width{ font-size: 1.375rem;}
+  }
+
+.menu{ color: $point-color; position: absolute; right: 0; top: 40px;
+  @include pad-width{
+    position: relative; left: 0; top: 40px;
+  }
+  ul{ text-align: right;
+    @include pad-width{
+      text-align: center;
+    }
+    li{ display: inline-block; margin-left: 50px; padding: 6px 20px 10px; border-radius: 40px; color: $point-color; transition: .5s; opacity: 0.8; cursor: pointer;
+
+      &:first-child{ margin-left: 0;}
+      &:visited{ color: $point-color;}
+      &:hover{ background: $main-color; transition: .5s; opacity: 1;}
+      
+      @media screen and (max-width: 1023px) { cursor: pointer; padding: 6px 20px 10px; border-radius: 40px; color: $point-color; transition: .5s; opacity: 0.8;
+        &:hover{ background: $main-color; transition: .5s; opacity: 1;}
+      }
+      @include phone-width{ margin-left: 10px;}
+    }
+  }
+}
+.pc-nav{
+  @media screen and (max-width: 1023px) { display: none;}
+}
+.m-nav{ cursor: pointer; display: none;
+  @media screen and (max-width: 1023px) { display: block;}
+}
+
+%pg-section { width: 100%; display: inline-block;}
+#about-wrap{ @extend %pg-section; padding-bottom: 40px; position: relative; background: #000 url(../img/about-bg.png) repeat;}
+.pg-bg-arc1{ width: 100%; position: relative; top: -40px;
+  @include phone-width { top: -20px;}
+}
+.about-td{ width: 1000px; margin: 40px auto; display: flex; justify-content: center; flex-wrap: wrap;
+  @include pad-width { width: 90%;}
+}
+.about-photo{ width: 200px; height: 200px; position: relative;
+  img{ width: 100%; border-radius: 50%; position: absolute; z-index: 9;}
+  @include phone-width { width: 150px; height: 150px;}
+}
+.photo-decor{ width: 200px; height: 200px; border: $main-color 4px dotted; position: absolute; top: -15px; left: -25px; border-radius: 50%;
+  @include phone-width{ width: 150px; height: 150px; border: $main-color 2px dotted;}
+}
+.about-profile{ margin-left: 50px;
+  @media screen and (max-width: 840px) { margin: 0 50px;}
+  @media screen and (max-width: 640px) { margin: 0 6%; width: 88%;}
+  @include phone-width{ margin: 0 0 0 2%; width: 98%;}
+  @media screen and (max-width: 500px) { margin: 0 2.5%; width: 95%;}
+  h2{ font-size: $main-word; color: $main-color; letter-spacing: 0.1em; margin-bottom: 20px; display: block;
+    @include phone-width{ font-size: $second-word; margin-bottom: 10px;}
+  }
+  p{ color: $second-color; margin: 0 0 30px 10px;
+    @include phone-width { margin-bottom: 20px;}
+  }
+}
+.about-none{
+  @include phone-width { display: none;}
+}
+.skills{ margin-bottom: 15px;
+  p{ text-align: center; display: inline-block; width: 60px; background: $main-color; color: $point-color; margin: 0 15px 0 10px; border-radius: 2px; font-size: $fifth-word;}
+  span{ color: $main-color; font-size: $fifth-word; line-height: 1.75;
+    @include phone-width { display: block; margin: 10px 0 20px 10px;}
+  }
+}
+.dc1{ position: absolute; width: 14%; top: 100px; right: -70px;
+  @include pad-width { width: 250px;}
+  @media screen and (max-width: 768px) { right: -100px;}
+  @include phone-width { top: 80px; right: -150px;}
+  @media screen and (max-width: 400px) { width: 210px;}
+}
+.dc1-2{ position: absolute; width: 16%; bottom: 100px; left: 100px;
+  @include pad-width { width: 220px; left: 50px;}
+  @media screen and (max-width: 840px) { left: -100px;}
+  @media screen and (max-width: 768px) { left: -150px;}
+  @media screen and (max-width: 640px) { left: -180px;}
+  @include phone-width { bottom: 40px; left: -155px;}
+  @media screen and (max-width: 400px) { width: 200px;}
+}
+
+#works-wrap{ @extend %pg-section; background: $bg-color url(../img/pg-bg-line.jpg) -100px -250px no-repeat; background-size: 1000px;}
+.stit-wrap{ width: 100%; height: 100px; color: $point-color; display: flex; justify-content: space-between; align-items: center; padding: 10% 10% 6%; position: relative;
+  @include pad-width { padding: 10% 10% 8%;}
+  @media screen and (max-width: 950px) { padding: 15% 10% 5%;}
+  @include phone-width { padding-bottom: 0;}
+}
+.stit-td{
+  h3{ font-size: $main-word; display: inline;
+    @include phone-width { font-size: $second-word;}
+  }
+  h4{ font-size: $second-word; display: inline; margin-left: 20px; font-family: $en-and-no;
+    @include phone-width { font-size: $third-word;}
+  }
+}
+.dc2{ width: 16%;
+  @include pad-width { width: 220px;}
+  @media screen and (max-width: 840px) { right: -50px; position: absolute;}
+  @media screen and (max-width: 640px) { opacity: 0.3;}
+}
+.works-td{ width: 100%; background: $point-color; display: inline-flex; justify-content: flex-end;
+  @media screen and (max-width: 950px) { display: none;}
+}
+.top-tit{ display: flex; justify-content: center; flex-wrap: wrap; align-content:center; padding: 20px; text-align: center;}
+.date{ font-size: $fifth-word; margin: 0 0 10px;}
+.title{ font-size: 1.75rem; font-family: $normal-font; letter-spacing: 0; margin: 5px 0 0;
+  @include pad-width { font-size: 1.5rem;}
+  a{ display: block; width: 100%; height: 100%; color: $second-color; transition: .3s;
+    &:hover{ color: $main-color; transition: .3s;}
+  }
+  span a:hover{ color: $main-color;}
+}
+
+.works-td2{ width: 1680px; margin: 50px auto 30px; display: flex; justify-content: center; flex-wrap: wrap; position: relative; z-index: 10;
+  @media screen and (max-width: 1920px) { width: 100%;}
+  @media screen and (max-width: 480px) { margin-top: 30px;}
+  ul{ width: 25%; border: 5px solid $point-color; margin: 30px; background: $point-color; border-radius: 5px; text-align: center; padding-bottom: 15px;
+    @include pad-width { width: 27%; margin: 30px 22px;}
+    @media screen and (max-width: 950px) { width: 35%; margin: 30px;}
+    @media screen and (max-width: 768px) { width: 40%; margin: 20px;}
+    @include phone-width { width: 42%; margin: 20px 15px; padding-bottom: 8px;}
+    @media screen and (max-width: 480px) { width: 84%; margin: 20px 8%;}
+    img{ width: 100%; transition: .5s;
+      &:hover{ opacity: 0.3; transition: .5s;}
+    }
+  }
+  li{ display: inline-block;}
+}
+.works-pic-bg{  margin-bottom: 20px; 
+background-image: linear-gradient(to right, #434343 0%, black 100%);}
+.title2{ font-size: 1.375rem; line-height: 1.5; margin: 0;
+  @include pad-width { font-size: $fourth-word;}
+}
+.top-work{ width: 900px;
+  @media screen and (max-width: $pc-s-media) {
+    width: 50%;
+  }
+  img{ width: 100%; transition: .5s;
+    &:hover{opacity: 0.1; transition: .5s;}
+  }
+}
+.none{ display: none;
+  @media screen and (max-width: 950px) { display: block;}
+}
+
+.works-td3{ display: block; width: 1800px; margin: 50px auto 0; min-height: 500px; position: relative;
+  h4{ font-size: $second-word; display: inline; font-family: $en-and-no; color: $point-color; margin-bottom: 30px; display: block;
+    @include phone-width { font-size: $third-word; margin-bottom: 20px;}
+  }
+  @media screen and (max-width: 1920px) { width: 1360px; min-height: 400px;}
+  @media screen and (max-width: 1440px) { width: 90%;}
+  @media screen and (max-width: 950px) { width: 80%;}
+  @media screen and (max-width: 768px) { min-height: 360px;}
+  @media screen and (max-width: 640px) { min-height: 480px;}
+  @include phone-width { min-height: 440px;}
+  @media screen and (max-width: 500px) { width: 84%; min-height: 380px;}
+}
+.dc3{ left: -10%; top: -24%; width: 14%; position: absolute;
+  @include pad-width { width: 180px;}
+  @media screen and (max-width: 950px) { left: -120px; top: -20%;}
+  @media screen and (max-width: 640px) { opacity: 0.3; width: 200px; top: -70px;}
+}
+
+#contact-wrap{ @extend %pg-section; text-align: center; background: $bg-color url(../img/about-bg.png) repeat; padding-bottom: 40px;
+  @media screen and (max-width: 768px) { padding-bottom: 80px;}
+}
+.pg-bg-arc2{ width: 100%; position: relative; top: -60px;
+  @media screen and (max-width: 1023px) { top: 0;}
+}
+.dc4{ width: 200px; position: absolute; left: 50%; margin-left: -300px; top: 40%;
+  @media screen and (max-width: 1920px) { top: 46%;}
+  @media screen and (max-width: $pc-m-media) { top: 40%;}
+  @media screen and (max-width: $pc-s-media) { top: 36%;}
+  @media screen and (max-width: $pad-media) { top: 32%;}
+  @media screen and (max-width: 640px) { width: 100px; margin-left: -250px;}
+  @include phone-width { margin-left: -200px;}
+}
+.dc4-2{ width: 200px; position: absolute; right: 50%; margin-right: -270px; bottom: -4%;
+  @media screen and (max-width: 640px) { width: 100px; margin-right: -220px;}
+  @media screen and (max-width: 480px) { margin-right: -200px;}
+}
+.stit-td2{ width: 100%; color: $main-color; margin-top: 150px; margin-bottom: 40px;
+  @media screen and (max-width: $pc-s-media) { margin-top: 120px;}
+  @media screen and (max-width: 480px) { margin-top: 80px; padding: 0 20px;}
+  h3{ font-size: $main-word;
+    @include phone-width { font-size: $second-word;}
+  }
+}
+.mail-wrap{ display: inline; 
+  p{ display: inline; padding: 10px 50px; color: $main-color; font-size: $normal-word; border: 2px solid $main-color; border-radius: 30px; line-height: 1;
+    @media screen and (max-width: 360px) { padding: 10px 30px;}
+  }
+  a{ display: block; width: 60px; margin: 20px auto 0; padding: 10px;}
+}
+
+footer{ @extend %pg-section; padding: 30px 20px 20px; background: $bg-color url(../img/pg-bg-line.jpg) center center no-repeat; background-size: 1000px; color: $point-color; text-align: center;
+  p{ font-size: $fifth-word; letter-spacing: 0.1em; opacity: 0.7;}
+}
+
+/* back to top */
+.back-top { width: 40px; height: 40px; position: fixed; bottom: 8%; right: 20px; z-index: 99; text-align: center; display: block; font-family: $en-and-no; border-radius: 50%; background: rgba(102,5,5,0.3); transition: .5s; font-size: $fourth-word; line-height: 44px;
+a{ display: block; width: 100%; height: 100%; transition: .5s; color: $point-color; color: rgba(255,255,255,0.5); border-radius: 50%;
+  &:hover{background-color: rgba(102,5,5,1); color: rgba(255,255,255,1);}
+}
+}
+
+#loading{ position: fixed; z-index: 999; background: $bg-color; display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;
+  img{ width: 64px; height: 64px;}
+}
+
+/* animation */
+.circle { animation: circle 30s infinite linear;}
+@keyframes circle {
+from { transform: rotate(0deg);}
+to { transform: rotate(360deg);}
+}
+
+.hvr-forward {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.5s;
+  transition-property: transform;
+}
+.hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
+  -webkit-transform: translateX(8px);
+  transform: translateX(8px);
+}
+
+.fadeIn{
+	animation: fadeIn 6s ease-in-out;
+  visibility: visible !important;	
+}
+@keyframes fadeIn {
+	0% { opacity: 0;}
+  60% { opacity: 0;}
+	100% { opacity: 1;}		
+}
+
+.fadeIn2{
+	animation: fadeIn2 3s ease-in-out;
+  visibility: visible !important;	
+}
+@keyframes fadeIn2 {
+	0% { opacity: 0;}
+	100% { opacity: 1;}		
+}
+
+.load{
+	animation: load 4.5s forwards;
+  visibility: visible !important;	
+}
+@keyframes load {
+	0% { opacity: 1;}
+  80% { opacity: 1; transform: translateY(0%);}
+	100% { opacity: 0; transform: translateY(-100%);}		
+}
