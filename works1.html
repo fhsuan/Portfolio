@@ -3,14 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio｜林芳萱作品集</title>
+    <meta property="og:image" content="https://fhsuan.github.io/Portfolio/img/fb.jpg" />
     <meta property="og:title" content="Portfolio｜林芳萱作品集">
-    <meta property="og:image" content="img/fb.jpg" />
-    <link rel="image_src" href="img/fb.jpg" />
     <meta content="telephone=no" name="format-detection">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="image_src" href="https://fhsuan.github.io/Portfolio/img/fb.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Caveat:wght@400;600&family=Noto+Sans+TC:wght@500;700&display=swap"
+        rel="stylesheet">
+
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- animsition -->
@@ -22,21 +29,23 @@
 </head>
 
 <body class="animsition">
-    <div class="back hvr-forward"><a href="index.html#works-wrap" class="animsition-link">Back</a>
+    <div class="back hvr-forward"><a href="index.html#works1" class="animsition-link">Back</a>
     </div>
 
     <div class="pg_works_int fadeIn">
         <ul>
             <li>
-                <h2>立榮假期官網改版</h2>
+                <h2>立榮假期官網</h2>
                 <span>2020 ｜ UI設計</span>
-                <p>全新改版納入機票、飯店、旅遊元件等產品，目的是讓旅客一站購足所有旅遊需求，並加入即訂即開選購功能。<br><br>希望以單純明瞭的網站動線與操作設計，讓使用者能更簡單的選擇；視覺風格採用清新自然、年輕明亮的配色與適當插圖呈現旅遊的悠閒感，並符合企業系列用色。
+                <p>全新改版納入機票、飯店、旅遊元件等產品，並加入即訂即開選購功能，期望旅客能一站購足所有旅遊需求。<br><br>設計單純明瞭的網站動線與操作，讓使用者能更容易選擇；視覺風格採用清新自然、年輕明亮的配色搭配插圖呈現旅遊的悠閒感，並符合企業系列用色。
                 </p>
-                <div class="web"><a href="https://www.uniairholidays.com/" target="_blank">Visit&ensp;Website</a></div>
+                <div class="web">
+                    <a href="https://www.uniairholidays.com/" target="_blank">Ｍore</a>
+                </div>
             </li>
         </ul>
     </div>
-    <div class="pg_works_pic">
+    <div class="pg_works_pic fadeIn2">
         <img src="img/works1/6.jpg" alt="">
         <img src="img/works1/7.jpg" alt="">
         <img src="img/works1/8.jpg" alt="">
@@ -53,7 +62,7 @@
             $(".animsition").animsition({
                 inClass: 'fade-in-left-sm',
                 outClass: 'fade-out-left-sm',
-                inDuration: 1000,
+                inDuration: 800,
                 outDuration: 800,
                 linkElement: '.animsition-link',
                 loading: true,
