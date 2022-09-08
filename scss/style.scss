@@ -10,13 +10,13 @@ $en-main-font:'Caveat', cursive;
 $en-second-font:'Alegreya Sans SC', sans-serif;
 $tw-font:'Noto Sans TC', sans-serif;
 
-body{ background: $main-color;}
+body{ background:#615b4f;}
 body, html{ scroll-behavior: smooth; overflow-x: hidden;}
 a:link, a:visited ,a:hover ,a:active {text-decoration: none;}
 h1{ display: none;}
 
 .first-section{
-  width: 100%; min-height: 700px; display: inline-flex; background: url(../img/bg1.jpg) center bottom no-repeat,url(../img/kv_bg.jpg) no-repeat center top; background-size: 100%; position: relative;
+  width: 100%; min-height: 700px; display: inline-flex; background: url(../img/bg1.jpg) center bottom no-repeat; background-size: 100%; position: relative;
   ul{ margin: auto; text-align: center;}
   @media screen and (max-width: 480px) { min-height: 600px;}
 }
