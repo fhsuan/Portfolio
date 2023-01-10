@@ -65,34 +65,36 @@ svg {
 }
 
 #path1 { 
-  stroke-dashoffset: 648.513178; stroke-dasharray: 648.513178; animation: path1 1.8s forwards;
+  stroke-dashoffset: 648.513178; stroke-dasharray: 648.513178; animation: path1 1.8s .5s forwards;
 }
 
 #path2 { 
-  stroke-dashoffset: 882.85898; stroke-dasharray: 882.85898; animation: path1 1.8s .2s forwards;
+  stroke-dashoffset: 882.85898; stroke-dasharray: 882.85898; animation: path1 1.8s .7s forwards;
 }
 
 #path3 { 
-  stroke-dashoffset: 584.430847; stroke-dasharray: 584.430847; animation: path1 1.8s .4s forwards;
+  stroke-dashoffset: 584.430847; stroke-dasharray: 584.430847; animation: path1 1.8s .9s forwards;
 }
 
 #path4 { 
-  stroke-dashoffset: 718.118196; stroke-dasharray: 718.118196; animation: path1 1.8s .6s forwards;
+  stroke-dashoffset: 718.118196; stroke-dasharray: 718.118196; animation: path1 1.8s 1.1s forwards;
 }
 
 #path5 { 
-  stroke-dashoffset: 982.210797; stroke-dasharray: 982.210797; animation: path1 1.8s .8s forwards;
+  stroke-dashoffset: 982.210797; stroke-dasharray: 982.210797; animation: path1 1.8s 1.3s forwards;
 }
 
 #path6 { 
-  stroke-dashoffset: 374.299096; stroke-dasharray: 374.299096; animation: path1 1.8s 1s forwards;
+  stroke-dashoffset: 374.299096; stroke-dasharray: 374.299096; animation: path1 1.8s 1.5s forwards;
 }
 
 #path7 { 
-  stroke-dashoffset: 469.391592; stroke-dasharray: 469.391592; animation: path1 1.8s 1.2s forwards;
+  stroke-dashoffset: 469.391592; stroke-dasharray: 469.391592; animation: path1 1.8s 1.7s forwards;
 }
 
 @keyframes path1 {
+  0%{ opacity: 0;}
+  50%{ opacity: 1;}
   100% {
     stroke-dashoffset: 0; fill-opacity: 100%; stroke-width: 0;
   }
