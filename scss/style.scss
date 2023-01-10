@@ -348,6 +348,9 @@ a.workslink {
   @media screen and (max-width: 1920px) {
     background: url("../images/contact_bg.jpg") center 300px no-repeat; background-attachment: fixed;
   }
+    @media screen and (max-height: 1024px) {
+    background: url("../images/contact_bg.jpg") center top no-repeat; background-attachment: fixed; background-size: cover;
+  }
 }
 
 .contact-td { 
