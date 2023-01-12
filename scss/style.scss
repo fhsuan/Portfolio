@@ -53,10 +53,10 @@ input,button,select,textarea { outline:none}
 svg { 
   width: 90%;
   @media screen and (max-width: 500px) {
-    width: 80%;
+    width: 70%;
   }
   @media screen and (max-width: 360px) {
-    width: 70%;
+    width: 60%;
   }
 }
 
@@ -121,9 +121,12 @@ svg {
   background: url(../images/kv_bg2.jpg) center top no-repeat ,url(../images/work_bg1.jpg) center bottom no-repeat; background-size: contain;}
 
 .se2 {
-  padding: 5%; display: flex; align-items: center; justify-content: center; @extend %position-re;  margin: 9% 0;
+  padding: 5%; display: flex; align-items: center; justify-content: center; @extend %position-re; margin: 9% 0;
   @media screen and (max-width: 900px) {
-    flex-wrap: wrap;
+    margin: 12% 0;
+  }
+  @media screen and (max-width: 900px) {
+    flex-wrap: wrap; margin: 9% 0;
   }
 }
 
@@ -209,7 +212,10 @@ svg {
 
 /* 3 */
 .works { 
-  background: url(../images/work_bg2.jpg); background-size: 200px; text-align: center; padding-bottom: 100px; position: relative;
+  background: url(../images/work_bg2.jpg); background-size: 200px; text-align: center; padding-bottom: 150px; position: relative;
+  @media screen and (max-width: 1024px) {
+    padding-bottom: 100px;
+  }
 }
 
 .flower4 {
