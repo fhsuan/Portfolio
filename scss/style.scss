@@ -5,6 +5,7 @@ $sp-color: #fbfadd;
 $font-color: #fff;
 $bright-color: #d7ff4a;
 $dark-color: #184e40;
+$block-color: #333;
 $font-zh: 'Noto Sans TC', sans-serif;
 %base-width{ width: 100%;}
 %position-re{ position: relative;}
@@ -141,7 +142,7 @@ svg {
   img{ @extend %base-width;}
 }
 .se2-action {
-  color: $dark-color; font-size: 0.938rem; line-height: 2.25rem; font-weight: 400;
+  color: $block-color; font-size: 0.938rem; line-height: 2.25rem; font-weight: 400;
   @media screen and (max-width: 900px) {
     width: 90%; margin: 0 auto 30px; text-align: center;
   }
