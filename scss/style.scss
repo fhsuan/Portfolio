@@ -5,7 +5,7 @@ $sp-color: #fbfadd;
 $font-color: #fff;
 $bright-color: #d7ff4a;
 $dark-color: #184e40;
-$block-color: #333;
+$block-color: #555;
 $font-zh: 'Noto Sans TC', sans-serif;
 %base-width{ width: 100%;}
 %position-re{ position: relative;}
@@ -142,7 +142,7 @@ svg {
   img{ @extend %base-width;}
 }
 .se2-action {
-  color: $block-color; font-size: 0.938rem; line-height: 2.25rem; font-weight: 400;
+  color: $block-color; font-size: 1rem; line-height: 2.25rem; font-weight: 400;
   @media screen and (max-width: 900px) {
     width: 90%; margin: 0 auto 30px; text-align: center;
   }
@@ -240,8 +240,12 @@ svg {
 }
 
 .works-wrap {
-  width: 1280px; display: inline-flex; flex-wrap: wrap;
+  width: 1480px; display: inline-flex; flex-wrap: wrap;
+
   @media screen and (max-width: 1920px) {
+    width: 1280px;
+  }
+  @media screen and (max-width: 1360px) {
     width: 1000px;
   }
   @media screen and (max-width: 1050px) {
@@ -270,22 +274,18 @@ svg {
 }
 
 a.workslink {
-  display: block; width: 30%; margin: 30px 1.5%;
+  display: block; width: 22%; margin: 30px 1.5%;
+
   @media screen and (max-width: 1920px) {
-    width: 42%; margin: 30px auto 0;
-  }
-  @media screen and (max-width: 1280px) {
-    width: 40%;
+    width: 30%; 
   }
   @media screen and (max-width: 800px) {
-    width: 42%;
+    width: 47%;
   }
   @media screen and (max-width: 500px) {
-    width: 80%; margin: 60px auto;
+    width: 97%;
   }
-  @media screen and (max-width: 360px) {
-    width: 90%;
-  }
+
   &:first-child{
     margin-top: 30px;
   }
@@ -297,7 +297,7 @@ a.workslink {
   }
   &:nth-child(even) {
     @media screen and (max-width: 1920px) {
-      margin-top: 80px; margin-bottom: 0;
+      margin-top: 30px; margin-bottom: 0;
     }
     @media screen and (max-width: 500px) {
       margin-top: 0;
@@ -351,12 +351,12 @@ a.workslink {
 }
 
 .contact-img { 
-  background: url("../images/contact_bg.jpg") center 600px no-repeat; background-attachment: fixed; text-align: center;
+  background: url("../images/contact_bg.jpg") center 600px no-repeat; background-attachment: fixed; text-align: center; 
   @media screen and (max-width: 1920px) {
-    background: url("../images/contact_bg.jpg") center 300px no-repeat; background-attachment: fixed;
+    background: url("../images/contact_bg.jpg") center 300px no-repeat; background-attachment: fixed; 
   }
     @media screen and (max-height: 1024px) {
-    background: url("../images/contact_bg.jpg") center top no-repeat; background-attachment: fixed; background-size: cover;
+    background: url("../images/contact_bg.jpg") center top no-repeat; background-attachment: fixed; background-size: cover; 
   }
 }
 
@@ -381,7 +381,7 @@ a.workslink {
 }
 
 footer {
-  background: rgba($color: #1f512e, $alpha: .8); color: #6eaf87; font-size: 0.813rem; letter-spacing: 1px; text-align: center; padding: 15px 0;
+  background: rgba($color: #154432, $alpha: .8); color: #6eaf87; font-size: 0.813rem; letter-spacing: 1px; text-align: center; padding: 15px 0;
 }
 
 .pop-msg--show {
