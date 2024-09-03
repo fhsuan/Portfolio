@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>林芳萱作品集 | Portfolio of FangHsuan Lin</title>
+  <meta name="description"
+    content="歡迎來到我的作品集網站！我是一位專業的網頁設計師，擁有豐富的設計和開發經驗。希望我的作品能夠為您帶來靈感。Welcome to my portfolio website! I am a professional web designer with extensive experience in design and development. I hope my portfolio inspires and informs you about my design capabilities!">
+  <meta property="og:image" content="img/fb.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="telephone=no" name="format-detection">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- animsition -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="js/animsition.min.js"></script>
+  <link rel="stylesheet" href="css/animsition.min.css">
+  <link rel="stylesheet" href="css/font.css?v=240710">
+  <link rel="stylesheet" href="css/works.css?v=2024">
+</head>
+
+<body class="animsition">
+  <div class="back hvr-forward"><a href="index.php#works" class="animsition-link">Back</a>
+  </div>
+
+  <div class="pg-works-int fadeIn">
+    <ul>
+      <li>
+        <h2>長榮假期官網改版</h2>
+        <span>2024 ｜ UI設計</span>
+        <p>
+          改版前藉由更仔細的市場調查與分析使用者情境，將閱讀文字全面加大，顏色通過對比度測試，提高可視性，讓瀏覽資訊時更清楚舒適。<br><br>設計以飛機觀景窗為意象，大量使用圓角元素，視覺感受更輕鬆親切；顏色取自長榮假期繽紛五彩的logo，搭配活潑的排版符合即定即開自由行的豐富特質。
+        </p>
+        <div class="web"><a href="https://www.evasion.aero/" target="_blank">Visit&ensp;Website</a></div>
+      </li>
+    </ul>
+  </div>
+  <div class="pg-works-pic">
+    <img src="img/works/works1/1.jpg" alt="">
+    <img src="img/works/works1/2.jpg" alt="">
+    <img src="img/works/works1/3.jpg" alt="">
+    <img src="img/works/works1/4.jpg" alt="">
+    <img src="img/works/works1/5.jpg" alt="">
+  </div>
+  <script>
+    $(document).ready(function () {
+      $(".animsition").animsition({
+        inClass: 'fade-in-left-sm',
+        outClass: 'fade-out-left-sm',
+        inDuration: 1000,
+        outDuration: 800,
+        linkElement: '.animsition-link',
+        loading: true,
+        loadingParentElement: 'body',
+        loadingClass: 'animsition-loading',
+        loadingInner: '',
+        timeout: false,
+        timeoutCountdown: 5000,
+        onLoadEvent: true,
+        browser: ['animation-duration', '-webkit-animation-duration'],
+        overlay: false,
+        overlayClass: 'animsition-overlay-slide',
+        overlayParentElement: 'body',
+        transition: function (url) { window.location.href = url; }
+      });
+    });
+  </script>
+</body>
+
+</html>

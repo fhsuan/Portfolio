@@ -1,0 +1,105 @@
+@charset "UTF-8";
+$chinese: "Noto Sans TC", sans-serif;
+$english: "Saira Semi Condensed", sans-serif;
+$bg-color-skin: #f9e8e1;
+$bg-color-grey: #f1f0ee;
+$bg-color-white: #ffffff;
+$main-color: #000;
+$sec-main-color: #333;
+$footer-color: #a19a92;
+$link-color: #6fd1c9;
+$main-word: 5rem;
+$second-word: 3rem;
+$third-word: 2rem;
+$fourth-word: 1.125rem;
+$fifth-word: 0.813rem;
+$normal-word: 1rem;
+$n: 10;
+$s: 500;
+$pc-m-media: 1680px;
+$pc-s-media: 1280px;
+$pad-media: 1100px;
+$phone-media: 600px;
+
+@mixin pad-width() {
+  @media screen and (max-width: $pad-media) {
+    @content;
+  }
+}
+@mixin phone-width() {
+  @media screen and (max-width: $phone-media) {
+    @content;
+  }
+}
+
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+ul, li{ margin: 0; padding: 0; list-style: none;}
+img, div, iframe{ border: 0; vertical-align: bottom;}
+// body, html{ width: 100%; height: 100%;}
+h1{ display: none;}
+a:link, a:visited ,a:hover ,a:active{ text-decoration: none;}
+
+body, html{
+-webkit-text-size-adjust: 100%;
+text-rendering: optimizeLegibility !important;
+-webkit-font-smoothing: antialiased !important;
+background: linear-gradient(to right,  #333333 0%,#63605a 100%);
+width: 100%; height: 100vh;
+}
+
+body, html{ height: 100%; font-family: $chinese;}
+
+.back{ 
+  font: 1.125rem $english; text-align: left; margin-left: 3%; width: 70px; height: 70px; text-align: center; line-height: 70px; position: fixed; z-index: 9; border-radius: 50%; top: 30px; border: 2px dotted $bg-color-white; transition: .5s; font-weight: 700;
+  @media screen and (max-width: 900px) {
+    position: relative; margin: 0 5% 10px;
+  }
+  a{ display: block; width: 100%; height: 100%; color: $bg-color-white;  border-radius: 50%;}
+  &:hover{ color: $link-color; transition: .5s; border-radius: 50%; border: 2px dotted $link-color; background: $link-color;}
+}
+
+
+.pg-works-int{ width: 35%; height: 100%; display: table; position: fixed; padding: 0 1% 3% 3%; 
+background: url(../img/pg-bg-line2.jpg) -300px 100px no-repeat; background-size: cover;
+  @media screen and (max-width: 930px) { padding-top: 60px;}
+  @media screen and (max-width: 900px) {width: 95%; height: auto; display: inline-block; position: relative; padding: 60px 0 20px 5%;
+    background: url(../img/pg-bg-line2.jpg) -150px -100px no-repeat; background-size: cover;}
+  ul{ display: table-cell; vertical-align: middle;
+    li{ display: inline-block;
+      h2{ font-size: 2rem; font-weight: 500; line-height: 2.75rem; margin-bottom: 10px; color: $bg-color-white;
+        @include pad-width { font-size: 1.75rem; line-height: 2rem;}
+      }
+      span{ font-size: 0.938rem; color: $footer-color; font-weight: 700;}
+      p{ margin: 20px 0; line-height: 1.875rem; color: $bg-color-white; font-weight: 500;}
+    }
+  }
+}
+
+.web{ width: 200px; font: 1.25rem $english; background: $bg-color-skin; text-align: center; border-radius: 5px; margin: 40px 0;
+  a{ color: $sec-main-color; transition: .5s; display: block; width: 100%; height: 100%; padding: 10px 0; border-radius: 5px; font-weight: 700;
+    &:hover{ background: $link-color; transition: .5s; color: $bg-color-white;}
+  }
+}
+
+.btn-no{ background: $footer-color; color: $bg-color-grey; padding: 10px 0; font-weight: 700; font-size: 1rem;}
+
+.pg-works-pic{ width: 65%; display: inline-block; float: right; text-align: right; padding: 3% 2% 0;
+  @media screen and (max-width: 900px) { width: 90%; float: left; text-align: center; padding: 0; margin: 0 5%;}
+  img{ width: 100%; box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3); margin-bottom: 40px;
+  }
+}
+
+/* animation */
+.fadeIn{
+	animation: fadeIn 1s ease-in-out;
+  visibility: visible !important;	
+}
+
+@keyframes fadeIn {
+	0% { opacity: 0;}
+  60% { opacity: 0;}
+	100% { opacity: 1;}		
+}
+
+
+

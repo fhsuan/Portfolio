@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>林芳萱作品集 | Portfolio of FangHsuan Lin</title>
+<meta name="description" content="歡迎來到我的作品集網站！我是一位專業的網頁設計師，擁有豐富的設計和開發經驗。希望我的作品能夠為您帶來靈感。Welcome to my portfolio website! I am a professional web designer with extensive experience in design and development. I hope my portfolio inspires and informs you about my design capabilities!">
+<meta property="og:image" content="img/fb.jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="telephone=no" name="format-detection">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/font.css?v=240710">
+<link rel="stylesheet" href="css/style.css?v=240710">
+</head>
+<body class="fadeIn">
+<h1>林芳萱作品集 | Portfolio of FangHsuan Lin</h1>
+
+<section id="section1">
+  <div class="photo1-wrap"><div class="photo1"></div></div>
+  <div class="nav">
+    <ul>
+      <li class="decor5"><img src="img/decor5.png" alt=""></li>
+      <li class="logo"><img src="img/logo-w.png" alt="" class="rotate"></li>
+      <li class="logo"><img src="img/logo-tina.png" alt=""></li>
+      <li class="kv-tit"><h2>林芳萱作品集</h2><p>Web and UI designer</p></li>
+      <li class="kv-btn"><span class="go-top">About</span><span class="go-bottom"><a href="#about">關於我</a></span></li>
+      <li class="kv-btn kv-btn2"><span class="go-top">Works</span><span class="go-bottom"><a href="#works">近年作品</a></span></li>
+      <li class="decor1"><img src="img/decor1.png" alt=""></li>
+    </ul>
+  </div>
+  <div class="photo2-wrap"><div class="photo2"></div></div>
+</section>
+
+<section id="about">
+  <img src="img/decor3.png" alt="" class="decor3">
+  <div class="photo3">
+    <img src="img/photo3.png" alt="" class="photo3-pic1">
+    <img src="img/barcode.png" alt="" class="photo3-pic2">
+    <div class="photo-w">
+      <h2>林芳萱&emsp;Tina</h2>
+      <p class="icon-envelop envelop"><span><a href="mailto:functionlin@gmail.com">functionlin@gmail.com</a></span></p>
+      <p class="icon-linkedin linkedin"><span><a href="https://www.linkedin.com/in/fhsuan/" target="_blank">https://www.linkedin.com/in/fhsuan/</a></span></p>
+    </div>
+  </div>
+  <div class="intro">
+    <h2>關於我</h2>
+    <p class="height-br">累積超過十年設計工作經歷，分別在「天下雜誌」、「長汎假期」擔任多年網頁設計，偶而接案嘗試更多元的主題。<br>喜歡設計和編碼，覺得切出完美的版跟找出Bug讓頁面順利運行的過程很迷人，獨立作業或團隊分工都可接受，希望持續做出需求方與自己都滿意的作品。</p>
+    <h2>學經歷</h2>
+    <div class="icon-wrap">
+      <div class="icon-exp"><img src="img/logo-AEUST.png" alt=""><p><span>2003 - 2007</span>亞東技術學院&emsp;工商業設計系</p></div>
+      <div class="icon-exp"><img src="img/logo-CW.png" alt="" ><p><span>2009 - 2015</span>天下雜誌&emsp;資深網頁設計</p></div>
+      <div class="icon-exp height-br"><img src="img/logo-EverFun.png" alt="" ><p><span>2017 - 2025</span>長汎假期&emsp;專案課長</p></div>
+    </div>
+    <h2>技能</h2>
+    <p>Photoshop ｜ Illustrator ｜ XD ｜ Sketch ｜ Figma ｜ Zeplin ｜ html5 ｜ CSS3 ｜ Visual Situdio Code ｜ Sublime Text</p>
+  </div>
+</section>
+
+<section id="works">
+  <h2>近年作品</h2>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <a href="works1.html" class="link">
+            <div class="swiper-pic">
+              <span class="year">2024</span>
+              <span class="icon-search"></span>
+              <img src="img/works/works1/works1.jpg" alt="">
+            </div>
+            <div class="carousel-caption">
+              <h3>長榮假期官網</h3>
+              <p>UI設計</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="works2.html" class="link">
+            <div class="swiper-pic">
+              <span class="year">2020</span>
+              <span class="icon-search"></span>
+              <img src="img/works/works2/works2.jpg" alt="">
+            </div>
+            <div class="carousel-caption">
+              <h3>立榮假期官網</h3>
+              <p>UI設計</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="works3.html" class="link">
+            <div class="swiper-pic">
+              <span class="year">2020</span>
+              <span class="icon-search"></span>
+              <img src="img/works/works3/works3.jpg" alt="">
+            </div>
+            <div class="carousel-caption">
+              <h3>一球入魂，前進棒球殿堂</h3>
+              <p>網頁設計、製作</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="works4.html" class="link">
+            <div class="swiper-pic">
+              <span class="year">2019</span>
+              <span class="icon-search"></span>
+              <img src="img/works/works4/works4.jpg" alt="">
+            </div>
+            <div class="carousel-caption">
+              <h3>汎遊中國</h3>
+              <p>網頁設計、製作</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="works5.html" class="link">
+            <div class="swiper-pic">
+              <span class="year">2019</span>
+              <span class="icon-search"></span>
+              <img src="img/works/works5/works5.jpg" alt="">
+            </div>
+            <div class="carousel-caption">
+              <h3>聚焦歡樂時光</h3>
+              <p>網頁設計、製作</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="works6.html" class="link">
+            <div class="swiper-pic">
+              <span class="year">2018</span>
+              <span class="icon-search"></span>
+              <img src="img/works/works6/works6.jpg" alt="">
+            </div>
+            <div class="carousel-caption">
+              <h3>駕馭你的新旅程</h3>
+              <p>網頁設計、製作</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="works7.html" class="link">
+            <div class="swiper-pic">
+              <span class="year">2018</span>
+              <span class="icon-search"></span>
+              <img src="img/works/works7/works7.jpg" alt="">
+            </div>
+            <div class="carousel-caption">
+              <h3>極光旅遊</h3>
+              <p>網頁設計、製作</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="works8.html" class="link">
+            <div class="swiper-pic">
+              <span class="year">2018</span>
+              <span class="icon-search"></span>
+              <img src="img/works/works8/works8.jpg" alt="">
+            </div>
+            <div class="carousel-caption">
+              <h3>越南，越愛妳</h3>
+              <p>網頁設計、製作</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="works9.html" class="link">
+            <div class="swiper-pic">
+              <span class="year">2017</span>
+              <span class="icon-search"></span>
+              <img src="img/works/works9/works9.jpg" alt="">
+            </div>
+            <div class="carousel-caption">
+              <h3>瑞士到了</h3>
+              <p>網頁設計、製作</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="works10.html" class="link">
+            <div class="swiper-pic">
+              <span class="year">2017</span>
+              <span class="icon-search"></span>
+              <img src="img/works/works10/works10.jpg" alt="">
+            </div>
+            <div class="carousel-caption">
+              <h3>青森美學</h3>
+              <p>網頁設計、製作</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-scrollbar"></div>
+    </div>
+</section>
+
+<section id="section4">
+  <img src="img/decor4.png" alt="" class="decor4">
+  <h3>Contact me</h3>
+  <p>若有合作意願歡迎與我聯繫，謝謝閱讀</p>
+  <ul class="contact">
+    <a href="mailto:functionlin@gmail.com"><li class="icon-envelop foot-envelop"></li></a>
+    <a href="https://www.linkedin.com/in/fhsuan/" target="_blank"><li class="icon-linkedin foot-linkedin"></li></a>
+  </ul>
+</section>
+
+<footer>Copyright © 2024 FangHsuan Lin. All rights reserved.</footer>
+
+<a id="back-top" href="#top">top</a>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<?php include("effect.html"); ?>
+</body>
+</html>
