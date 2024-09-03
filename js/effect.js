@@ -1,9 +1,7 @@
 // top
 $(document).ready(function () {
-  // 初始隐藏“返回顶部”按钮
   $("#back-top").hide();
 
-  // 监听窗口滚动事件
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $('#back-top').fadeIn();
@@ -12,7 +10,6 @@ $(document).ready(function () {
     }
   });
 
-  // 点击“返回顶部”按钮时滚动到页面顶部
   $('#back-top').click(function () {
     $('html, body').animate({ scrollTop: 0 }, 800);
     return false;
