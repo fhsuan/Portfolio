@@ -23,7 +23,7 @@ ul, li{margin: 0; padding: 0; list-style: none;}
 img, div, iframe{border: 0; vertical-align: bottom;}
 body, html{width: 100%; height: 100%;}
 h1{display: none;}
-a:link, a:visited ,a:hover ,a:active{text-decoration: none;}
+a{text-decoration: none;}
 
 body, html{
 -webkit-text-size-adjust: 100%;
@@ -146,7 +146,7 @@ a.link{display: block; height: 100%;
 footer{width: 100%; background-color: $footer-color; color: $bg-color-grey; font-size: $third-size; text-align: center; padding: 10px 20px; font-weight: 500; font-family: $english;}
 
 /* back to top */
-#back-top{position: fixed; bottom: 70px; right: 0; z-index: 9999; width: 50px; line-height: 50px; text-align: center; color: $bg-color-white; display: block; font-family: $english; font-weight: 700; background-color: rgba($color: $main-color, $alpha: .5); transition: .5s; border-radius: 5px 0 0 5px;
+#back-top{position: fixed; bottom: 100px; right: 0; z-index: 999; width: 50px; line-height: 50px; text-align: center; color: $bg-color-white; display: block; font-family: $english; font-weight: 700; background-color: rgba($color: $main-color, $alpha: .5); transition: .5s; border-radius: 5px 0 0 5px;
   a{display: block; width: 100%; height: 100%; color: $bg-color-white;}
   &:hover{background-color: rgba($color: $main-color, $alpha: 1); transition: .5s; border-radius: 50px;}
 }
