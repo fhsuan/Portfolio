@@ -15,6 +15,8 @@ $basics-size: 1rem;
 $chinese: "Noto Sans TC", sans-serif;
 $english: "Saira Semi Condensed", sans-serif;
 
+:root{--swiper-navigation-size: 20px;}
+
 %tit-h2 {
   letter-spacing: 8px;
   background: url(../img/tit-line.gif) repeat-x;
@@ -448,14 +450,14 @@ h3 {
 
 .swiper-button-next,
 .swiper-button-prev {
-  padding: 25px;
+  padding: 15px 20px;
   background-color: $link-color;
   border-radius: 50%;
-  top: var(--swiper-navigation-top-offset, 30%);
-  --swiper-navigation-size: 20px;
+  top: var(--swiper-navigation-top-offset, 30%)!important;
   color: $bg-color-white;
   font-weight: 700;
-  right: var(--swiper-navigation-sides-offset, 0);
+  height: auto;
+  width: auto;
 }
 
 .swiper-button-prev {
@@ -718,6 +720,17 @@ footer {
   .swiper-container {
     height: 350px;
   }
+
+  #works {
+    width: 90%;
+    padding-top: 60px;
+    margin: 0 5%;
+    text-align: center;
+
+    h2 {
+      margin: 0 0 40px;
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -750,7 +763,7 @@ footer {
 
   .swiper-button-next,
   .swiper-button-prev {
-    top: var(--swiper-navigation-top-offset, 18%);
+    top: var(--swiper-navigation-top-offset, 25%)!important;
   }
 }
 
@@ -802,17 +815,6 @@ footer {
   .icon-wrap {
     width: 300px;
     margin: auto;
-  }
-
-  #works {
-    width: 90%;
-    padding-top: 60px;
-    margin: 0 5%;
-    text-align: center;
-
-    h2 {
-      margin: 0 0 40px;
-    }
   }
 
   .height-br {
@@ -931,6 +933,10 @@ footer {
 
   .go-bottom {
     top: 0;
+  }
+
+  footer {
+    font-size: $smallest-size;
   }
 }
 
